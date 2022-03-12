@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 57.5%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 18.75em) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col-1-of-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((100% - 6rem) / 2);
+          flex: 0 0 calc((100% - 6rem) / 2);
+}
+
+.col-1-of-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((100% - (2 * 6rem)) / 3);
+          flex: 0 0 calc((100% - (2 * 6rem)) / 3);
+}
+
+.col-2-of-3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(2 * ((100% - (2 * 6rem)) / 3) + 6rem);
+          flex: 0 0 calc(2 * ((100% - (2 * 6rem)) / 3) + 6rem);
+}
+
+.col-1-of-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((100% - (3 * 6rem)) / 4);
+          flex: 0 0 calc((100% - (3 * 6rem)) / 4);
+}
+
+.col-2-of-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(2 * ((100% - (3 * 6rem)) / 4) + 6rem);
+          flex: 0 0 calc(2 * ((100% - (3 * 6rem)) / 4) + 6rem);
+}
+
+.col-3-of-4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
+          flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
+}
+/*# sourceMappingURL=page3Main.css.map */

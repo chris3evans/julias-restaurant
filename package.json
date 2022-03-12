@@ -1,0 +1,17 @@
+{
+  "name": "3-page-template-change-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compileP1:sass": "node-sass Page1Sass/page1Main.scss page1Main.css -w",
+    "compileP2:sass": "node-sass Page2Sass/page2Main.scss page2Main.css -w",
+    "compileP3:sass": "node-sass Page3Sass/page3Main.scss page3Main.css -w"
+  },
+  "author": "Chris Evans",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "parcel": "^2.0.0-rc.0"
+  }
+}
