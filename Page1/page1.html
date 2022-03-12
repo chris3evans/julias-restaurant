@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Page1Sass/page1Main.css" />
     <title>Home Page</title>
   </head>
@@ -10,6 +16,61 @@
     <p>This is just some text on page 1</p>
     <a href="../Page2/page2.html">Visit Page 2</a>
     <!--NAVIGATION-->
+    <nav class="navigation">
+      <div class="navigation__logo">
+        <img
+          class="logo"
+          src="External Content/Mock Logo.png"
+          alt="Julias Restaurant Logo"
+        />
+      </div>
+
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__active">
+          <a class="navigation__link button-text" hre="#">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link button-text" hre="#">About us</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link button-text" hre="#">Menu</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link button-text" hre="#">Contact us</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link button-text" hre="#">Book table</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--HERO SECTION-->
+    <section class="hero">
+      <div class="hero__text">
+        <div class="hero__titles">
+          <h2 class="heading-2">Welcome to</h2>
+          <h1 class="heading-1">Julia's Restaurant</h1>
+          <h3 class="main-text">
+            Experience the best vegetarian and vegan food with patio and dine-in
+            facility
+          </h3>
+        </div>
+
+        <div class="hero__buttons">
+          <button class="btn btn--red-full" href="#">Order online</button>
+          <button class="btn btn--red-clear">Reserve table</button>
+        </div>
+      </div>
+
+      <div class="hero__image">
+        <img
+          class="hero__image--photo"
+          src="External Content/Hero Image.jpg"
+          alt="Main Dish"
+        />
+      </div>
+    </section>
+
     <!--POPULAR DISHES-->
     <!--NEW DISHES-->
     <!--BOOK YOUR TABLE-->

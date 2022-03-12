@@ -1,0 +1,33 @@
+.btn {
+  text-transform: uppercase;
+  font-family: "Fredoka One", cursive;
+  font-size: 3.5rem;
+  padding: 1.5rem 3rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &--red-full {
+    background-color: $color-red;
+    color: white;
+    border: 0.1rem solid white;
+
+    &:hover {
+      background-color: white;
+      color: $color-red;
+      border: 0.1rem solid $color-red;
+    }
+  }
+
+  &--red-clear {
+    background-color: white;
+    color: $color-red;
+    border: 0.1rem solid $color-red;
+
+    &:hover {
+      background-color: $color-red;
+      color: white;
+      border: 0.1rem solid white;
+    }
+  }
+}

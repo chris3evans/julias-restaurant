@@ -1,0 +1,49 @@
+.navigation {
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  &__logo {
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+
+  &__item {
+    text-decoration: none;
+    transition: all 0.8s;
+    padding: 2rem;
+    text-align: center;
+
+    &:hover {
+      background-color: $color-green;
+    }
+    &:hover > .button-text {
+      color: white;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+  }
+
+  &__active {
+    background-color: $color-green !important;
+
+    & > .button-text {
+      color: white;
+    }
+  }
+}
+
+.logo {
+  height: 15rem;
+  width: 15rem;
+}
