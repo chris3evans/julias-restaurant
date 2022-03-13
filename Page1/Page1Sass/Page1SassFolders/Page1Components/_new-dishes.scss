@@ -1,0 +1,40 @@
+.new {
+  &__card {
+    padding: 3rem;
+    display: grid;
+    grid-template-rows: 18rem repeat(3, min-content);
+    justify-items: center;
+    grid-row-gap: 3rem;
+    box-shadow: 0rem 1rem 2rem rgba(black, 0.5);
+
+    &--yellow {
+      background-color: $color-yellow;
+    }
+
+    &--green {
+      background-color: $color-green;
+    }
+  }
+
+  &__image {
+    grid-row: 1 / 2;
+
+    &--file {
+      height: 100%;
+      width: 100%;
+      box-shadow: 0rem 1rem 2rem rgba(black, 0.5);
+    }
+  }
+
+  &__name {
+    grid-row: 2 / 3;
+  }
+
+  &__price {
+    grid-row: 3 / 4;
+  }
+
+  &__button {
+    grid-row: 4 / 5;
+  }
+}
