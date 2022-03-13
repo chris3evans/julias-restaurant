@@ -49,7 +49,7 @@ body {
   -ms-grid-rows: (min-content)[6];
       grid-template-rows: repeat(6, -webkit-min-content);
       grid-template-rows: repeat(6, min-content);
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .button-text {
@@ -84,10 +84,14 @@ body {
   font-family: "Fredoka One", cursive;
 }
 
+.text-white {
+  color: white;
+}
+
 .btn {
   text-transform: uppercase;
   font-family: "Fredoka One", cursive;
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding: 1.5rem 3rem;
   border: none;
   cursor: pointer;
@@ -117,6 +121,19 @@ body {
   background-color: #9b0000;
   color: white;
   border: 0.1rem solid white;
+}
+
+.btn__dish {
+  background-color: white;
+  color: #9b0000;
+  border: 0.1rem solid white;
+}
+
+.btn__dish:hover {
+  -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
 }
 
 .navigation {
@@ -180,6 +197,58 @@ body {
 .logo {
   height: 15rem;
   width: 15rem;
+}
+
+.popular__card {
+  padding: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 18rem (min-content)[3];
+      grid-template-rows: 18rem repeat(3, -webkit-min-content);
+      grid-template-rows: 18rem repeat(3, min-content);
+  justify-items: center;
+  grid-row-gap: 3rem;
+  -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.popular__card--yellow {
+  background-color: #dc9600;
+}
+
+.popular__card--red {
+  background-color: #9b0000;
+}
+
+.popular__image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.popular__image--file {
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.popular__name {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+}
+
+.popular__price {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+}
+
+.popular__button {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
 }
 
 .row {
@@ -296,5 +365,22 @@ body {
   width: 90%;
   -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
           box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.popular {
+  margin: 5rem 0rem;
+}
+
+.popular__heading {
+  margin-bottom: 2.5rem;
+}
+
+.popular__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=page1Main.css.map */

@@ -1,7 +1,7 @@
 .btn {
   text-transform: uppercase;
   font-family: "Fredoka One", cursive;
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding: 1.5rem 3rem;
   border: none;
   cursor: pointer;
@@ -28,6 +28,17 @@
       background-color: $color-red;
       color: white;
       border: 0.1rem solid white;
+    }
+  }
+
+  &__dish {
+    background-color: white;
+    color: $color-red;
+    border: 0.1rem solid white;
+
+    &:hover {
+      box-shadow: 0rem 1rem 2rem rgba(black, 0.5);
+      transform: translateY(-0.5rem);
     }
   }
 }

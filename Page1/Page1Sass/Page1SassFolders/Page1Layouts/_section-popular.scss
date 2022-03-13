@@ -1,0 +1,12 @@
+.popular {
+  margin: 5rem 0rem;
+
+  &__heading {
+    margin-bottom: 2.5rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
