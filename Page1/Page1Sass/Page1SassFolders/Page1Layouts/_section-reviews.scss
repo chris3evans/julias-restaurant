@@ -1,0 +1,14 @@
+.review {
+  grid-row: 6 / 7;
+
+  &__heading {
+    margin: 5rem 0rem;
+  }
+
+  &__container {
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    grid-row-gap: 7.5rem;
+  }
+}

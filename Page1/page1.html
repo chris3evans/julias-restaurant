@@ -13,8 +13,6 @@
   </head>
 
   <body>
-    <p>This is just some text on page 1</p>
-    <a href="../Page2/page2.html">Visit Page 2</a>
     <!--NAVIGATION-->
     <nav class="navigation">
       <div class="navigation__logo">
@@ -27,13 +25,19 @@
 
       <ul class="navigation__list">
         <li class="navigation__item navigation__active">
-          <a class="navigation__link button-text" hre="#">Home</a>
+          <a class="navigation__link button-text" hre="../Page1/page1.html"
+            >Home</a
+          >
         </li>
         <li class="navigation__item">
-          <a class="navigation__link button-text" hre="#">About us</a>
+          <a class="navigation__link button-text" hre="../Page2/page2.html"
+            >About us</a
+          >
         </li>
         <li class="navigation__item">
-          <a class="navigation__link button-text" hre="#">Menu</a>
+          <a class="navigation__link button-text" hre="../Page3/page3.html"
+            >Menu</a
+          >
         </li>
         <li class="navigation__item">
           <a class="navigation__link button-text" hre="#">Contact us</a>
@@ -272,6 +276,85 @@
         <button class="btn btn--red-full">Book table</button>
       </div>
     </section>
+
     <!--CUSTOMER REVIEWS-->
+    <section class="review">
+      <div class="review__heading">
+        <h2 class="heading-2">What our customers have to say!</h2>
+      </div>
+      <div class="review__container">
+        <div class="review__card review__card--yellow">
+          <div class="review__image">
+            <img
+              class="review__image--file"
+              src="External Content/Customer 1.jpg"
+            />
+          </div>
+
+          <div class="review__text">
+            <span class="review__left-quotation text-white">&#8220;</span>
+            <p class="main-text text-white margin-bottom-small">
+              Lorem ipsum dolor sit amet. Ex aliquam consequatur est atque
+              consequatur sit laudantium cumque. Ut debitis quam id veritatis
+              sit maiores recusandae ea voluptate reiciendis et consequatur
+              galisum ab illo adipisci in eaque quod.
+            </p>
+
+            <div class="review__name">
+              <p class="main-text text-white">John Doe</p>
+              <span class="review__right-quotation text-white">&#8221;</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review__card review__card--red">
+          <div class="review__image">
+            <img
+              class="review__image--file"
+              src="External Content/Customer 2.jpg"
+            />
+          </div>
+
+          <div class="review__text">
+            <span class="review__left-quotation text-white">&#8220;</span>
+            <p class="main-text text-white margin-bottom-small">
+              Lorem ipsum dolor sit amet. Ex aliquam consequatur est atque
+              consequatur sit laudantium cumque. Ut debitis quam id veritatis
+              sit maiores recusandae ea voluptate reiciendis et consequatur
+              galisum ab illo adipisci in eaque quod.
+            </p>
+
+            <div class="review__name">
+              <p class="main-text text-white">Carl Spencer</p>
+              <span class="review__right-quotation text-white">&#8221;</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review__card review__card--green">
+          <div class="review__image">
+            <img
+              class="review__image--file"
+              src="External Content/Customer 3.jpg"
+            />
+          </div>
+
+          <div class="review__text">
+            <span class="review__left-quotation text-white">&#8220;</span>
+            <p class="main-text text-white margin-bottom-small">
+              Lorem ipsum dolor sit amet. Ex aliquam consequatur est atque
+              consequatur sit laudantium cumque. Ut debitis quam id veritatis
+              sit maiores recusandae ea voluptate reiciendis et consequatur
+              galisum ab illo adipisci in eaque quod.
+            </p>
+
+            <div class="review__name">
+              <p class="main-text text-white">Jane Doe</p>
+              <span class="review__right-quotation text-white">&#8221;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
