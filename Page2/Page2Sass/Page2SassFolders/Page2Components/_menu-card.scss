@@ -1,0 +1,50 @@
+.menu {
+  &__card {
+    width: 85%;
+    margin: 0rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, min-content);
+    padding: 3rem;
+    grid-row-gap: 2rem;
+    grid-column-gap: 4rem;
+
+    &--yellow {
+      background: linear-gradient(
+        to left top,
+        $color-yellow,
+        $color-yellow-light
+      );
+    }
+    &--red {
+      background: linear-gradient(to left top, $color-red, $color-red-light);
+    }
+    &--green {
+      background: linear-gradient(
+        to left top,
+        $color-green,
+        $color-green-light
+      );
+    }
+  }
+
+  &__title-left {
+  }
+
+  &__title-right {
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    flex: 0 0 90%;
+  }
+
+  &__price {
+    flex: 0 0 5%;
+  }
+}

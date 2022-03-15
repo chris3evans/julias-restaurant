@@ -188,6 +188,7 @@ body {
 
 .navigation__link {
   cursor: pointer;
+  text-decoration: none;
 }
 
 .navigation__active {
