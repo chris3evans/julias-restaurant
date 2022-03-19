@@ -44,6 +44,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 3rem;
 }
 
 .heading-1 {
@@ -69,6 +70,17 @@ body {
   font-size: 2rem;
   color: white;
   font-family: "Fredoka One", cursive;
+}
+
+.text-green {
+  color: green !important;
+}
+
+.button-text {
+  text-transform: uppercase;
+  font-family: "Fredoka One", cursive;
+  color: #005600;
+  font-size: 3rem;
 }
 
 .margin-bottom-small {
@@ -133,6 +145,70 @@ body {
           flex: 0 0 5%;
 }
 
+.navigation {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.navigation__item {
+  text-decoration: none;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navigation__item:hover {
+  background-color: #005600;
+}
+
+.navigation__item:hover > .button-text {
+  color: white;
+}
+
+.navigation__link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navigation__active {
+  background-color: #005600 !important;
+}
+
+.navigation__active > .button-text {
+  color: white;
+}
+
+.logo {
+  height: 15rem;
+  width: 15rem;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -180,50 +256,23 @@ body {
           flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
 }
 
-.row {
-  max-width: 114rem;
-  margin: 0 auto;
+.menu__heading {
+  margin: 5rem 0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.col-1-of-2 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc((100% - 6rem) / 2);
-          flex: 0 0 calc((100% - 6rem) / 2);
-}
-
-.col-1-of-3 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc((100% - (2 * 6rem)) / 3);
-          flex: 0 0 calc((100% - (2 * 6rem)) / 3);
-}
-
-.col-2-of-3 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(2 * ((100% - (2 * 6rem)) / 3) + 6rem);
-          flex: 0 0 calc(2 * ((100% - (2 * 6rem)) / 3) + 6rem);
-}
-
-.col-1-of-4 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc((100% - (3 * 6rem)) / 4);
-          flex: 0 0 calc((100% - (3 * 6rem)) / 4);
-}
-
-.col-2-of-4 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(2 * ((100% - (3 * 6rem)) / 4) + 6rem);
-          flex: 0 0 calc(2 * ((100% - (3 * 6rem)) / 4) + 6rem);
-}
-
-.col-3-of-4 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
-          flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
+.menu__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (min-content)[3];
+      grid-template-rows: repeat(3, -webkit-min-content);
+      grid-template-rows: repeat(3, min-content);
+  grid-row-gap: 10rem;
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=page2Main.css.map */

@@ -20,3 +20,12 @@
   color: white;
   font-family: "Fredoka One", cursive;
 }
+.text-green {
+  color: green !important;
+}
+.button-text {
+  text-transform: uppercase;
+  font-family: "Fredoka One", cursive;
+  color: $color-green;
+  font-size: 3rem;
+}
