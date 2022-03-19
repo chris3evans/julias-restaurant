@@ -1,0 +1,26 @@
+.story {
+  background: linear-gradient(to right top, $color-yellow, $color-yellow-light);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 4rem;
+  padding: 5rem;
+  box-shadow: 0rem 1rem 2rem rgba(black, 0.5);
+
+  &__image {
+    grid-column: 1 / 4;
+
+    &--file {
+      height: 100%;
+      width: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0rem 1rem 2rem rgba(black, 0.5);
+    }
+  }
+
+  &__text {
+    grid-column: 4 / 9;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-row-gap: 2rem;
+  }
+}

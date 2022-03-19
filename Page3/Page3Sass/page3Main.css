@@ -46,6 +46,98 @@ body {
           box-sizing: border-box;
 }
 
+.container {
+  padding: 0rem 8rem;
+}
+
+.button-text {
+  text-transform: uppercase;
+  font-family: "Fredoka One", cursive;
+  color: #005600;
+  font-size: 3rem;
+}
+
+.heading-1 {
+  font-size: 6rem;
+  color: #9b0000;
+  text-transform: uppercase;
+  font-family: "Fredoka One", cursive;
+}
+
+.heading-2 {
+  font-size: 4rem;
+  color: #005600;
+  font-family: "Fredoka One", cursive;
+}
+
+.heading-3 {
+  font-size: 3rem;
+  color: #005600;
+  font-family: "Fredoka One", cursive;
+}
+
+.main-text {
+  font-size: 2rem;
+  color: #005600;
+  font-family: "Fredoka One", cursive;
+}
+
+.text-green {
+  color: #005600 !important;
+}
+
+.text-white {
+  color: white;
+}
+
+.chef {
+  background: -webkit-gradient(linear, left bottom, right top, from(#005600), to(#007900));
+  background: linear-gradient(to right top, #005600, #007900);
+  grid-column-gap: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  padding: 5rem;
+  -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chef__image {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 3;
+  grid-column: 6 / 9;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.chef__image--file {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.chef__text {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (min-content)[2];
+      grid-template-rows: repeat(2, -webkit-min-content);
+      grid-template-rows: repeat(2, min-content);
+  grid-row-gap: 2rem;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -91,5 +183,44 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
           flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
+}
+
+.story {
+  background: -webkit-gradient(linear, left bottom, right top, from(#dc9600), to(#f3c90c));
+  background: linear-gradient(to right top, #dc9600, #f3c90c);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 4rem;
+  padding: 5rem;
+  -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.story__image {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+}
+
+.story__image--file {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.story__text {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 5;
+  grid-column: 4 / 9;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (min-content)[2];
+      grid-template-rows: repeat(2, -webkit-min-content);
+      grid-template-rows: repeat(2, min-content);
+  grid-row-gap: 2rem;
 }
 /*# sourceMappingURL=page3Main.css.map */
