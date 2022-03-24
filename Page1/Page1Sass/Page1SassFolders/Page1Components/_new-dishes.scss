@@ -7,6 +7,12 @@
     grid-row-gap: 3rem;
     box-shadow: 0rem 1rem 2rem rgba(black, 0.5);
 
+    @include respond(tab-land) {
+      width: 60%;
+      margin-bottom: 5rem;
+      grid-template-rows: 25rem repeat(3, min-content);
+    }
+
     &--yellow {
       background-color: $color-yellow;
     }

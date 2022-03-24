@@ -44,6 +44,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 3rem;
 }
 
 .container {
@@ -106,8 +107,73 @@ body {
   margin-bottom: 2rem;
 }
 
+.heading {
+  margin: 5rem 0rem;
+}
+
 .text-white {
   color: white;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.navigation__item {
+  text-decoration: none;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navigation__item:hover {
+  background-color: #005600;
+}
+
+.navigation__item:hover > .button-text {
+  color: white;
+}
+
+.navigation__link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navigation__active {
+  background-color: #005600 !important;
+}
+
+.navigation__active > .button-text {
+  color: white;
+}
+
+.logo {
+  height: 15rem;
+  width: 15rem;
 }
 
 .origin__year {

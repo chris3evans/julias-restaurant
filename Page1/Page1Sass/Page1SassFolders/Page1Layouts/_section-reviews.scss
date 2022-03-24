@@ -3,6 +3,14 @@
 
   &__heading {
     margin: 5rem 0rem;
+
+    @include respond(tab-land) {
+      display: flex;
+      justify-content: center;
+    }
+    @include respond(tab-port) {
+      margin: 3rem 0rem;
+    }
   }
 
   &__container {
@@ -10,5 +18,9 @@
     display: grid;
     grid-template-rows: repeat(3, min-content);
     grid-row-gap: 7.5rem;
+
+    @include respond(tab-port) {
+      justify-items: center;
+    }
   }
 }

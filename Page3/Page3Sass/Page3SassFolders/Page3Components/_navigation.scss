@@ -1,13 +1,8 @@
 .navigation {
-  grid-row: 1 / 2;
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-between;
-
-  @include respond(tab-port) {
-    flex-direction: column;
-  }
 
   &__list {
     list-style: none;
@@ -15,10 +10,6 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
-
-    @include respond(tab-port) {
-      width: 100%;
-    }
   }
 
   &__item {

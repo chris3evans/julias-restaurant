@@ -2,12 +2,26 @@
   margin: 5rem 0rem;
   grid-row: 3 / 4;
 
+  @include respond(tab-land) {
+    margin: 5rem 0rem 0rem 0rem;
+  }
+
   &__heading {
     margin: 2.5rem;
+
+    @include respond(tab-land) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include respond(tab-land) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
