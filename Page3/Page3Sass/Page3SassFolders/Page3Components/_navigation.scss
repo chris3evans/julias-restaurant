@@ -18,6 +18,14 @@
     @include respond(tab-port) {
       width: 100%;
     }
+
+    @include respond(phone-big) {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, min-content);
+      grid-template-rows: repeat(3, min-content);
+      justify-content: center;
+    }
   }
 
   &__item {

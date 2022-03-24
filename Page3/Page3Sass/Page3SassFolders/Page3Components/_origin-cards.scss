@@ -23,47 +23,101 @@
     align-items: center;
     height: 30rem;
     padding: 2rem;
+
+    @include respond(tab-land) {
+      justify-content: center;
+    }
   }
 }
 
 #year1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+
+  @include respond(tab-land) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 #year2 {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+
+  @include respond(tab-land) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 }
 #year3 {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
+
+  @include respond(tab-land) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
 }
 #year4 {
   grid-column: 4 / 5;
   grid-row: 2 / 3;
+
+  @include respond(tab-land) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
 }
 #year5 {
   grid-column: 5 / 6;
   grid-row: 1 / 2;
+
+  @include respond(tab-land) {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
 }
 
 #event1 {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+
+  @include respond(tab-land) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 #event2 {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+
+  @include respond(tab-land) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }
 #event3 {
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+
+  @include respond(tab-land) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
 }
 #event4 {
   grid-column: 4 / 5;
   grid-row: 1 / 2;
+
+  @include respond(tab-land) {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
 }
 #event5 {
   grid-column: 5 / 6;
   grid-row: 2 / 3;
+
+  @include respond(tab-land) {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
 }

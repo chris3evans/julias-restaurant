@@ -1,10 +1,20 @@
 .origin {
   margin: 10rem 0rem;
 
+  @include respond(tab-port) {
+    margin: 4rem 0rem;
+  }
+
   &__container {
     display: grid;
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 3rem;
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(2, 40%);
+      grid-template-rows: repeat(5, min-content);
+      justify-content: center;
+    }
   }
 }

@@ -7,15 +7,38 @@
   box-shadow: 0rem 1rem 2rem rgba(black, 0.5);
   align-items: center;
 
+  @include respond(tab-land) {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, min-content);
+  }
+
   &__image {
     grid-column: 6 / 9;
     grid-row: 1 / 2;
+
+    @include respond(tab-land) {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
 
     &--file {
       height: 100%;
       width: 100%;
       border-radius: 0.5rem;
       box-shadow: 0rem 1rem 2rem rgba(black, 0.5);
+
+      @include respond(tab-land) {
+        height: 60%;
+        width: 75%;
+      }
+      @include respond(tab-port) {
+        height: 70%;
+        width: 85%;
+      }
     }
   }
 
@@ -25,5 +48,10 @@
     display: grid;
     grid-template-rows: repeat(2, min-content);
     grid-row-gap: 2rem;
+
+    @include respond(tab-land) {
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+    }
   }
 }

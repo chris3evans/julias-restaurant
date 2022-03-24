@@ -41,4 +41,18 @@ body {
 
 .container {
   padding: 0rem 8rem;
+
+  @include respond(tab-port) {
+    padding: 0rem 4rem;
+  }
+  @include respond(phone-big) {
+    padding: 0rem;
+  }
+}
+
+.heading {
+  @include respond(tab-land) {
+    display: flex;
+    justify-content: center;
+  }
 }
