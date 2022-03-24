@@ -128,6 +128,15 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 56.25em) {
+  .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .navigation__list {
   list-style: none;
   display: -webkit-box;
@@ -140,6 +149,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+}
+
+@media (max-width: 56.25em) {
+  .navigation__list {
+    width: 100%;
+  }
 }
 
 .navigation__item {

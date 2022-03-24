@@ -9,6 +9,14 @@
     grid-row-gap: 2rem;
     grid-column-gap: 4rem;
 
+    @include respond(tab-port) {
+      width: 100%;
+    }
+    @include respond(phone-big) {
+      grid-template-columns: none;
+      grid-template-rows: repeat(10, min-content);
+    }
+
     &--yellow {
       background: linear-gradient(
         to left top,
@@ -29,9 +37,17 @@
   }
 
   &__title-left {
+    @include respond(phone-big) {
+      grid-row: 1 / 2;
+      margin-bottom: 2rem;
+    }
   }
 
   &__title-right {
+    @include respond(phone-big) {
+      grid-row: 6 / 7;
+      margin: 2rem;
+    }
   }
 
   &__item {
@@ -46,5 +62,46 @@
 
   &__price {
     flex: 0 0 5%;
+  }
+}
+
+#1 {
+  @include respond(phone-big) {
+    grid-row: 2 / 3;
+  }
+}
+#2 {
+  @include respond(phone-big) {
+    grid-row: 3 / 4;
+  }
+}
+#3 {
+  @include respond(phone-big) {
+    grid-row: 4 / 5;
+  }
+}
+#4 {
+  @include respond(phone-big) {
+    grid-row: 5 / 6;
+  }
+}
+#5 {
+  @include respond(phone-big) {
+    grid-row: 7 / 8;
+  }
+}
+#6 {
+  @include respond(phone-big) {
+    grid-row: 8 / 9;
+  }
+}
+#7 {
+  @include respond(phone-big) {
+    grid-row: 9 / 10;
+  }
+}
+#8 {
+  @include respond(phone-big) {
+    grid-row: 10 / 11;
   }
 }

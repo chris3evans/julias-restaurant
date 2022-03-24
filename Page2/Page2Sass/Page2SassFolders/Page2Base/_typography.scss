@@ -8,6 +8,11 @@
   font-size: 4rem;
   color: white;
   font-family: "Fredoka One", cursive;
+
+  @include respond(phone-big) {
+    font-size: 5rem;
+    text-align: center;
+  }
 }
 .heading-3 {
   font-size: 3rem;
