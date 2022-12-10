@@ -1,17 +1,18 @@
 {
-  "name": "3-page-template-change-me",
+  "name": "julias-restaurant",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "compileP1:sass": "node-sass Page1Sass/page1Main.scss page1Main.css -w",
     "compileP2:sass": "node-sass Page2Sass/page2Main.scss page2Main.css -w",
-    "compileP3:sass": "node-sass Page3Sass/page3Main.scss page3Main.css -w"
+    "compileP3:sass": "node-sass Page3Sass/page3Main.scss page3Main.css -w",
+    "build": "parcel build Page1/index.html --dist-dir ./dist && parcel build Page2/page2.html --dist-dir ./dist && parcel build Page3/page3.html --dist-dir ./dist"
   },
   "author": "Chris Evans",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
-    "parcel": "^2.0.0-rc.0"
+    "parcel": "^2.4.1"
   }
 }
